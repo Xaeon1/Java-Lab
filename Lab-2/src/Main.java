@@ -6,6 +6,13 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+
+        /*
+        DISCLAIMER: I have no idea how cars work so
+                    calculations might be total bs!
+                    (Especially for electric cars)
+         */
+
         List<Car> carList = new ArrayList<>();
 
         Car c1 = new Car("Ford", 144, 100, 0);

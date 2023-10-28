@@ -54,8 +54,13 @@ public class Car {
     public void refuel(){
         Scanner scan = new Scanner(System.in);
         float refill = scan.nextFloat();
-        fuel += refill;
-        setFuel(fuel);
+        if (refill < 0) {
+            fuel += refill;
+            setFuel(fuel);
+        }else {
+            System.out.println("Invalid refill input...");
+        }
+
     }
 
     public void drive(int distance){

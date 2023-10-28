@@ -21,11 +21,11 @@ public class Student extends Person implements Printable {
 
     @Override
     public void introduce() {
-        System.out.println(getName() + getAge() + grade);
+        System.out.println("Hi! I am " + getName() + " " + getAge() + " years old from " + grade + " grade.");
     }
 
     @Override
     public void printDetails() {
-        introduce();
+        System.out.println("Name: " + getName() + "| Age: " + getAge() + "| Grade: " + grade);
     }
 }

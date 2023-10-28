@@ -5,6 +5,7 @@ public class Person implements Printable {
     private int age;
 
     public Person(String name, int age) {
+
         this.name = name;
         this.age = age;
     }
@@ -14,7 +15,11 @@ public class Person implements Printable {
     }
 
     public void setAge(int age) {
-        this.age = age;
+        if(age < 0 || age > 150){
+            System.out.println("Please enter valid information for age.");
+        }else{
+            this.age = age;
+        }
     }
 
     public String getName() {
@@ -22,15 +27,21 @@ public class Person implements Printable {
     }
 
     public void setName(String name) {
-        this.name = name;
+        if (name == null || name.isEmpty()){
+            System.out.println("Please enter your name.");
+        }else {
+            this.name = name;
+        }
     }
 
     public void introduce(){
-        System.out.println(name + age);
+
+        System.out.println("Hi! I am " + getName() + " " + getAge() + " years old.");
+
     }
 
     @Override
     public void printDetails() {
-        introduce();
+        System.out.println("Name: " + getName() + "| Age: " + getAge());
     }
 }
