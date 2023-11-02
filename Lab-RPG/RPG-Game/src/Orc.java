@@ -1,6 +1,7 @@
 public class Orc extends Character{
-
-
+    public void attack(Character target) {
+        target.takeDamage(getDamage());
+    }
     @Override
     public void takeDamage(int amount) {
         setHealth(getHealth() - amount);

@@ -8,6 +8,7 @@ public abstract class Character implements Playable{
     public abstract void useAbility(Character target);
     public abstract void showInfo();
 
+
     public Character(String name, int health, int damage) {
         this.name = name;
         this.health = health;

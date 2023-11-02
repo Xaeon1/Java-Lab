@@ -1,5 +1,9 @@
 public class Human extends Character {
     @Override
+    public void attack(Character target) {
+        target.takeDamage(getDamage());
+    }
+    @Override
     public void takeDamage(int amount) {
         setHealth(getHealth() - amount);
     }
@@ -25,8 +29,5 @@ public class Human extends Character {
         super(name, health, damage);
     }
 
-    @Override
-    public void attack(Character target) {
-        
-    }
+
 }

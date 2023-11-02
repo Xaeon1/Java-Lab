@@ -1,5 +1,7 @@
 public class Elf extends Character{
-
+    public void attack(Character target) {
+        target.takeDamage(getDamage());
+    }
     private boolean dodgeIsActive;
     @Override
     public void takeDamage(int amount) {
