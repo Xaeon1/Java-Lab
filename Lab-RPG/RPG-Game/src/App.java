@@ -70,6 +70,6 @@ public class App {
         }
         List<Character> charactersList = new ArrayList<>();
 
-        
-    }
+
+   }
 }

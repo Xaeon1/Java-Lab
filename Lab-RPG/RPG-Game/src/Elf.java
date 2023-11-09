@@ -7,6 +7,7 @@ public class Elf extends Character{
     public void takeDamage(int amount) {
         if (isDodgeIsActive()){
             setHealth((int) (getHealth() - amount*0.75));
+            setDodgeIsActive(false);
         }else {
             setHealth(getHealth() - amount);
         }
