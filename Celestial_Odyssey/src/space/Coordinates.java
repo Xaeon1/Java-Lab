@@ -1,4 +1,4 @@
-package spaceStructure;
+package space;
 
 public class Coordinates {
     private int x;

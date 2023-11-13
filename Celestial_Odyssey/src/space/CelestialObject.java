@@ -1,4 +1,4 @@
-package spaceStructure;
+package space;
 
 import java.util.List;
 
@@ -31,7 +31,7 @@ public abstract class CelestialObject {
     public void attract(){
     }
     public void collide(CelestialObject ob){
-        if (ob instanceof Planet)
+        //if (ob instanceof Planet)
     }
     public abstract void displayInformation();
 }

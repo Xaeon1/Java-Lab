@@ -1,4 +1,4 @@
-package spaceStructure;
+package space;
 
 import java.util.List;
 
